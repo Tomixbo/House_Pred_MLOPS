@@ -1,0 +1,13 @@
+@media(min-width: 768px) {
+    .news-input{
+        width: 50%;
+    }
+
+}
+
+@media(min-width: 768px) {
+    .dev-card{
+        width: 300px;
+    }
+
+}

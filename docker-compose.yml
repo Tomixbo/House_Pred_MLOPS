@@ -1,0 +1,33 @@
+version: "3"
+services:
+  dashboard:
+    build: 
+      dockerfile: ./dashboard/Dockerfile
+    restart: always
+    ports:
+      - "1235:1235"
+    networks:
+      - house-sales-network
+
+  prediction:
+    build: 
+      dockerfile: ./prediction/Dockerfile
+    restart: always
+    networks:
+      - house-sales-network
+
+  app:
+    image: mandatombo/django-pycaret:latest
+    command: python manage.py runserver 0.0.0.0:1236
+    container_name: house-sales-app
+    restart: always
+    ports:
+      - "1236:1236"
+    volumes:
+      - ./app/house_sales_web:/app
+    networks:
+      - house-sales-network
+
+networks:
+  house-sales-network:
+    name: house-sales-network

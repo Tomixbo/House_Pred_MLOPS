@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+   <div class="container m-3">
+      <h1>Your prediction</h1>
+      <p>For a house with :</p>
+      <p>Latitude : {{ lat }}</p>
+      <p>Longitude : {{ long }}</p>
+      <p>Square feet living : {{ sqft_living }}</p>
+      <p>Square feet basement : {{ sqft_basement }}</p>
+      <p>Square feet above : {{ sqft_above }}</p>
+      <p>Square feet living (2015) : {{ sqft_living15 }}</p>
+      <p>Square feet lot (2015) : {{ sqft_lot15 }}</p>
+      <p>Year built : {{ yr_built }}</p>
+      <p>Zipcode : {{ zipcode }}</p>
+      <p>Grade : {{ grade }}</p>
+      <p>The predicted price is : {{ price }} USD</p>
+
+   </div>
+{% endblock content %}

@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> House Sales Website</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <div class="container">
+        <a href="{% url 'home' %}" class="navbar-brand"><strong> <span style="color:#0d6efd ;">P-</span><span style="color:#d63384;">House</span> Sales</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <!-- Dataset nav 
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Dataset</a>
+                </li>
+                -->
+                <li class="nav-item">
+                    <a href="{% url 'prediction' %}" class="nav-link">Make Prediction</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'dashboard' %}" class="nav-link">Model Explainer</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    {% block content %}
+        
+
+    {% endblock content %}
+    
+    <!-- footer -->
+    <footer class="footer py-4 bg-dark ">
+        <div class="container clearfix">
+            <span class="text-muted float-end"> © 2024 Manda & Tombo, MLOPS project </span>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

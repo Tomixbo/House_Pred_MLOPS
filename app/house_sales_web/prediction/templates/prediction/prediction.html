@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+   
+   <div class="container py-3">
+      <h1>Complete the form</h1>
+      <form form action="." method="post" enctype="multipart/form-data">
+         {% csrf_token %}
+         <p>Latitude : (47.1559 < lat < 47.7776)</p>
+         <p><input class="input-group w-25 text-black p-2" type="number" step="0.0001" name = "lat" /></p>
+         <p>Longitude : (-122.5190 < long < -121.3150 )</p>
+         <p><input class="input-group w-25 text-black p-2" type="number" step="0.0001" name = "long" /></p>
+         <p>Square feet living: (290 < sqft < 13540)</p>
+         <p><input class="input-group w-25 text-black p-2" type = "text" pattern="\d*" name = "sqft_living" /></p>
+         <p>Square feet basement: (290 < sqft < 13540)</p>
+         <p><input class="input-group w-25 text-black p-2" type = "text" pattern="\d*" name = "sqft_basement" /></p>
+         <p>Square feet above: (290 < sqft < 13540)</p>
+         <p><input class="input-group w-25 text-black p-2" type = "text" pattern="\d*" name = "sqft_above" /></p>
+         <p>Square feet living(2015): (290 < sqft < 13540)</p>
+         <p><input class="input-group w-25 text-black p-2" type = "text" pattern="\d*" name = "sqft_living15" /></p>
+         <p>Square feet lot (2015): (290 < sqft < 13540)</p>
+         <p><input class="input-group w-25 text-black p-2" type = "text" pattern="\d*" name = "sqft_lot15" /></p>
+         <p>Year built: (1900 < year < 2015)</p>
+         <p><input class="input-group w-25 text-black p-2" type = "text" pattern="\d*" name = "yr_built" /></p>
+         <p>Zipcode: (98001 < zipcode < 98199)</p>
+         <p><input class="input-group w-25 text-black p-2" type = "text" pattern="\d*" name = "zipcode" /></p>
+         <p>Grade: (0 < grade < 10)</p>
+         <p><input class="input-group w-25 text-black p-2" type = "text" pattern="\d*" name = "grade" /></p>
+         <p><input class="btn btn-primary" type="submit" value="Submit"></p>
+      </form>
+   </div>
+{% endblock content %}
