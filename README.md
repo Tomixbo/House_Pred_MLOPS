@@ -1,11 +1,27 @@
 # House sales : Price Prediction Website (MLOPS)
 
-This is a personnal project about a creation of a website for house sales price prediction, using machine learning.
+This is a personnal project : **"creation of a website for house sales price prediction, using machine learning"**. </br>
 In this repository, we can find :
 - the notebook file and dataset for the model training and tuning
 - Dockerfile and docker-compose file for image creation and containerization
-- all files for the django application with website templates
-- python scripts for the API client (used to make prediction), and the dashboard 
+- django application files with website templates
+- python scripts for the API client (used to make prediction), and the dashboard (for model evaluation)
 
-Docker contener deployment :
+## Local Deployment
+### Step 01 - Pulling docker image and run container with docker compose :
+- docker pull mandatombo/django-pycaret:latest
+- docker compose up -d
+
+### Step 01 (alternative) - Building the docker image and run container with docker compose :
+- docker build -t mandatombo/django-pycaret:latest .
+- docker compose up -d
+
+### Step 02 - Accessing the website :
+- verify if all services started successfully :
+    * docker compose ps
+    * docker <container_name> logs
+- tape the url on a navigator to access the website :
+    * http://localhost:1236/
+
+## Website previewing
     
