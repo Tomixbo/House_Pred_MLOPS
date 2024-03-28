@@ -24,4 +24,8 @@ In this repository, we can find :
     * http://localhost:1236/
 
 ## Website previewing
-    
+    preview video still in production
+
+## who contributed to this project
+- Ambinintsoa Manda
+- Tombo H. ANDRIAMAHATANA
