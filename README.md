@@ -1,6 +1,6 @@
 # House sales : Price Prediction Website (MLOPS)
 
-This is a personnal project : **"creation of a website for house sales price prediction, using machine learning"**. </br>
+This is a personnal project : **"Creation of a website for house sales price prediction, using machine learning"**. </br>
 In this repository, we can find :
 - the notebook file and dataset for the model training and tuning
 - Dockerfile and docker-compose file for image creation and containerization
@@ -26,6 +26,6 @@ In this repository, we can find :
 ## Website previewing
     preview video still in production
 
-## who contributed to this project
+## Those who contributed to this project
 - Ambinintsoa Manda
 - Tombo H. ANDRIAMAHATANA
