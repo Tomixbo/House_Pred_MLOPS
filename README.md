@@ -24,7 +24,12 @@ In this repository, we can find :
     * http://localhost:1236/
 
 ## Website previewing
-    preview video still in production
+
+
+
+https://github.com/Tomixbo/House_Pred_MLOPS/assets/95044551/5ebe282f-f25b-4674-837e-692758df507b
+
+
 
 ## Those who contributed to this project
 - Ambinintsoa Manda
